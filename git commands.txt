@@ -11,3 +11,27 @@ git log --oneline
 git checkout commit id    ---head will be detatched
 #branch
 git checkout -b table-version-new
+
+#diff between commit to commit
+git diff commit id1 commit id2
+
+#github
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/j9hasan/learning-git.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/j9hasan/learning-git.git
+git branch -M main
+git push -u origin main
+
+#SSH key setup
+1.ls -al ~/.ssh
+if system already has ssh key(id_rsa id_rsa.pub) then goto 5
+
+2.ssh-keygen -t rsa -b 4096 -C “mail@gmail.com"
+
+3.to run ssh agent in bg eval "$(ssh-agent -s)”
