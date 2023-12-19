@@ -9,6 +9,18 @@ git log --oneline
 
 #to rollback to any commit
 git checkout commit id    ---head will be detatched
+
+#Stash
+
+#restore
+to restore any changes
+> git restore <filename>
+ex. git restore new-update.html
+even restore from staging area,
+> git restore --staged <file> 
+> git restore --staged <directory> 
+> git restore --staged .
+
 #branch
 git checkout -b table-version-new
 
@@ -35,3 +47,66 @@ if system already has ssh key(id_rsa id_rsa.pub) then goto 5
 2.ssh-keygen -t rsa -b 4096 -C “mail@gmail.com"
 
 3.to run ssh agent in bg eval "$(ssh-agent -s)”
+
+4.ssh-add ~/.ssh/id_rsa  //addin gprivate key
+
+5.cat ~/.ssh/id_rsa.pub | clip //just coppying pub key
+
+6.put key in github
+
+git push origin master
+git push origin any-branch
+
+#PULL
+first commit your work. otherwise it may conflict
+git pull origin main
+
+#PULL request
+িগটহােব সাধারনত মূল কাজ বাই িডফল্ট মেইন(main) ব্রাঞ্চে হেয়
+থােক। বাই কনেভনশন অন্য ব্রাঞ্চ অন্য িকছু টেস্ট করার উদ্দেশ্যে
+বানানো হেয় থােক। তো আপিন কোনো প্রোেজক্টে কাজ করেল সেই
+প্রোেজক্টে অেনকজন Collaborators থাকেত পাের। তারমধ্যে
+হয়তো িলেডও কেউ থাকেত পােরন। এখন িলেডর অনুমিত ছাড়া বা
+িসদ্ধান্ত ছাড়া নতুন কোনো িফচার হয়তো মাস্টার ব্রাঞ্চে অ্যাড করা
+নাও যেেত পাের। সেক্ষেত্রে আপনার করা নতুন িফচার অন্য
+Collaborators িকভােব দেখেব? 
+িসম্পল! আপিন আেরকটা ব্রাঞ্চে কাজ কের সেটা পুশ কের িদেবন
+িগটহােব।
+
+#cloning
+ git clone git@github.com:zonayedpca/learning-git.git 
+ optional folder name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
