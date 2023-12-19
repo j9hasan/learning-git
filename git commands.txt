@@ -1,0 +1,13 @@
+/*USEFUL GIT COMMANDS/*
+#config username & gmail
+git config --global user.name "jubaid hasan"
+git config --global user.email "jubaid.eee07@gmail.com"
+
+#log
+git log
+git log --oneline
+
+#to rollback to any commit
+git checkout commit id    ---head will be detatched
+#branch
+git checkout -b table-version-new
